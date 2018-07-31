@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="orderstatusFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/app" doc:name="HTTP"/>
         <set-payload value="#['Hi from mule']" doc:name="Set Payload"/>
+        <logger level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
